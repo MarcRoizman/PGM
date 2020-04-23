@@ -1,4 +1,4 @@
-package tc.oc.pgm.util.item.tag;
+package tc.oc.pgm.util.inventory.tag;
 
 import org.bukkit.inventory.ItemStack;
 
@@ -13,7 +13,7 @@ final class BooleanItemTag implements ItemTag<Boolean> {
 
   @Override
   public Boolean get(ItemStack item) {
-    return "1".equals(itemTag.get(item));
+    return "1".equals(itemTag.get(item)) ? true : null;
   }
 
   @Override
